@@ -1,4 +1,4 @@
-# w261_final_project_team2
+# Flight Delay Prediction Model
 Members: Bo Qian, Demian Rivera, Devin Robison, Jorge Hernandez
 
 Repo for Team 2's final project for UC Berkeley w261 course, Summer 2021 session.
