@@ -1,7 +1,8 @@
 # Flight Delay Prediction Model
 Members: Bo Qian, Demian Rivera, Devin Robison, Jorge Hernandez
 
-Repo for Team 2's final project for UC Berkeley w261 course, Summer 2021 session.
+A project conducted in Databricks using PySpark for predicting flight delays in the US airport system. This project defined a delay as any flight late by 15 minutes or more and focused more on arrival time delays of flights. Model was built on combining two publicly available datasets, one from the US Department of Transportation, which include all flight information, and the other weather information from the National Oceanic and Atmospheric Administration. The two dataset where joined together using airports and the closest weather station to that location. Closest weather station was defined by calculating distance for weather station to airport using geographical coordinates and the haversine formula. Time of weather information was reduced to include information within the hour of time of flight and arrival. Four models were tested for predicting delays, Linear Regression, Decision Tree, Random Forest, and XGBoost. XGBoost model performed the best with a precision of 89.42% and a recall of 75.89% but was more complicated and took longer to train in a cluster. Random forest was close behind with a precision of 89.89% and a recall of 64.69% but was over easier to train in Spark.
+
 Included in this repo is the final notebook that contains all the code and write-up for the project and the presentation slides used for the final presentation.
 
 Databricks link: https://adb-6759024569771990.10.azuredatabricks.net/?o=6759024569771990#notebook/3766896360345838/command/3191476435811922
